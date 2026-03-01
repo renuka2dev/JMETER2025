@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh '''
                 mkdir -p reports
-                jmeter -n -t jmeter-tests/JPetStoreLogin.jmx -l reports/results.jtl -e -o reports/html
+                jmeter -n -t QAPE/J2.jmx -l reports/results.jtl -e -o reports/html
                 '''
             }
         }
